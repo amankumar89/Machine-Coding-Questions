@@ -4,7 +4,7 @@ import type { RouteObject } from "react-router";
 import ColorExplorer from "./modules/ColorExplorer";
 import Authentication from "./modules/Authentication";
 import ContactForm from "./modules/ContactForm";
-// import CopyToClipboard from "./modules/CopyToClipboard";
+import CopyToClipboard from "./modules/CopyToClipboard";
 
 export const DATA: RouteObject[] = [
   {
@@ -19,10 +19,10 @@ export const DATA: RouteObject[] = [
     path: '/contact-form',
     element: <ContactForm />,
   },
-  // {
-  //   path: '/copy-to-clipboard',
-  //   element: <CopyToClipboard />,
-  // },
+  {
+    path: '/copy-to-clipboard',
+    element: <CopyToClipboard />,
+  },
 ];
 
 export const getTitle = (str: string) =>

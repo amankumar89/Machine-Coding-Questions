@@ -1,13 +1,19 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Layout from "../components/Layout"
 
 const CopyToClipboard = () => {
     const inputRef = useRef<HTMLInputElement>(null)
+    const [message, setMessage] = useState<string>('');
 
     const handleCopy = async () => {
         if (inputRef.current) {
-            await navigator.clipboard.writeText(inputRef.current.value)
-            alert("Text copied!")
+            if (!inputRef.current.value?.trim()) {
+                setMessage('error, Please enter text to copy.');
+                return;
+            }
+            await navigator.clipboard.writeText(inputRef.current.value);
+            inputRef.current.focus();
+            setMessage("Text copied.");
         }
     }
 
@@ -36,6 +42,9 @@ const CopyToClipboard = () => {
                             Copy
                         </button>
                     </div>
+                    <p className="ml-2 mt-8" style={{ color: message.includes('error') ? 'red' : 'green' }}>
+                        {message}
+                    </p>
                 </div>
             </div>
         </Layout>
