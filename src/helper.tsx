@@ -4,7 +4,7 @@ import type { RouteObject } from "react-router";
 import ColorExplorer from "./modules/ColorExplorer";
 import Authentication from "./modules/Authentication";
 import ContactForm from "./modules/ContactForm";
-import CopyToClipboard from "./modules/CopyToClipboard";
+// import CopyToClipboard from "./modules/CopyToClipboard";
 
 export const DATA: RouteObject[] = [
   {
