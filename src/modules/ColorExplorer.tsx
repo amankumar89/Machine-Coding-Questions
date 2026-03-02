@@ -27,7 +27,7 @@ const ColorExplorer = () => {
     return (
         <Layout title="Color Explorer">
             {/* container */}
-            <div className="w-lg mx-auto my-0">
+            <div className="md:w-2xl mx-auto my-0">
                 {/* top container */}
                 <div className="flex items-center w-full mx-auto bg-white border border-gray-300 rounded-md shadow-sm focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition">
 

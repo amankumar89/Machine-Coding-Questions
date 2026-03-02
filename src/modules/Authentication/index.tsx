@@ -8,7 +8,7 @@ const Authentication = () => {
         <UserProvider>
             <Layout title="Authentication">
                 {/* container */}
-                <div className="w-[650px] mx-auto my-0 bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden">
+                <div className="md:w-3xl mx-auto my-0 bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] overflow-hidden">
                     <Navbar />
                     <Dashboard />
                 </div>

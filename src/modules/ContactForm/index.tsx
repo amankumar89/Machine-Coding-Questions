@@ -49,7 +49,7 @@ const ContactForm = () => {
 
     return (
         <Layout title="Contact Form">
-            <div className="w-xl min-h-32 bg-white rounded-md p-8">
+            <div className="w-[90vw] lg:max-w-4xl min-h-32 bg-white rounded-md p-8">
                 {isSubmitted ? (
                     <>
                         <div className="text-xl font-semibold underline">Thank you, User!</div>

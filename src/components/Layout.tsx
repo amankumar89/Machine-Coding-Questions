@@ -16,7 +16,7 @@ const Layout = ({ title, children }: LayoutProps) => {
                         <MoveLeftIcon />
                     </button>
                 )}
-                <span className="text-3xl font-bold text-center">
+                <span className="text-xl md:text-3xl font-bold text-center">
                     {title ?? 'Machine Coding Question'}
                 </span>
             </div>
