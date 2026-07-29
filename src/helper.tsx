@@ -1,10 +1,15 @@
 import type { RouteObject } from "react-router";
-import TodoPage from "./modules/Todo";
+import TodoPage from "./modules/TodoPage";
+import DebounceSearch from "./modules/DebounceSearchInput";
 
 export const DATA: RouteObject[] = [
   {
     path: "/todo-with-local-storage",
     element: <TodoPage />,
+  },
+  {
+    path: "/debounce-search",
+    element: <DebounceSearch />,
   },
 ];
 
