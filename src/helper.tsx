@@ -1,5 +1,5 @@
 import type { RouteObject } from "react-router";
-import TodoPage from "./modules/TodoPage";
+import TodoPage from "./modules/todo";
 import DebounceSearch from "./modules/DebounceSearchInput";
 
 export const DATA: RouteObject[] = [
